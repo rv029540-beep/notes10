@@ -1,31 +1,4 @@
-body{
-  margin:0;
-  font-family:Arial;
-  background:#f2f2f2;
-  text-align:center;
-}
-
-header{
-  background:#4CAF50;
-  color:white;
-  padding:20px;
-}
-
-.box{
-  background:white;
-  margin:20px;
-  padding:20px;
-  border-radius:15px;
-}
-
-.btn{
-  display:inline-block;
-  background:#2196F3;
-  color:white;
-  padding:10px 20px;
-  text-decoration:none;
-  border-radius:8px;
-}.focus-search {
+.focus-search {
   width: 60%;
   display: block;
   margin: 30px auto;
@@ -41,4 +14,3 @@ header{
   box-shadow: 0 0 10px rgba(0,123,255,0.5);
   transform: scale(1.02);
 }
-
