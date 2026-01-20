@@ -1,28 +1,32 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#f4f6f8;   /* soft grey */
+  background:#f4f6f8;
   text-align:center;
   color:#333;
 }
 
+/* Header */
 header{
-  background:#1f3c88; 
+  background:#1f3c88;
   color:white;
   padding:20px;
 }
 
+/* Content Box */
 .box{
   background:#ffffff;
-  margin:20px;
+  margin:20px auto;
   padding:20px;
   border-radius:12px;
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  max-width:900px;   /* desktop me limit */
 }
 
+/* Button */
 .btn{
   display:inline-block;
-  background:#2563eb; 
+  background:#2563eb;
   color:white;
   padding:10px 22px;
   text-decoration:none;
@@ -36,20 +40,44 @@ header{
   transform:scale(1.05);
 }
 
-.focus-search {
-  width: 60%;
-  display: block;
-  margin: 30px auto;
-  padding: 14px;
-  font-size: 16px;
-  border: 2px solid #d1d5db;
-  border-radius: 10px;
-  transition: 0.3s;
+/* Search Input */
+.focus-search{
+  width:60%;
+  display:block;
+  margin:30px auto;
+  padding:14px;
+  font-size:16px;
+  border:2px solid #d1d5db;
+  border-radius:10px;
+  transition:0.3s;
 }
 
-.focus-search:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 8px rgba(37,99,235,0.4);
-  transform: scale(1.02);
+.focus-search:focus{
+  border-color:#2563eb;
+  box-shadow:0 0 8px rgba(37,99,235,0.4);
+  transform:scale(1.02);
   outline:none;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width:768px){
+  header{
+    padding:16px;
+    font-size:18px;
+  }
+
+  .box{
+    margin:15px;
+    padding:16px;
+  }
+
+  .focus-search{
+    width:90%;
+    font-size:15px;
+  }
+
+  .btn{
+    padding:10px 18px;
+    font-size:15px;
+  }
 }
